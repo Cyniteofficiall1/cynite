@@ -34,16 +34,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('💠 Movie Group 💠', url='https://t.me/cynitemoviesgroup'),
             InlineKeyboardButton('💠 Update Channel💠', url='https://t.me/HBBackup')
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ ᎻᎬᏞᏢ ♻️', callback_data='help'),
             InlineKeyboardButton('CONTACT ME', url='https://t.me/Teamx69'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ ᗩᗷᝪᑌᎢ ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCMzFIpsfTkZfkI-O20o1gww')
+            InlineKeyboardButton('🔍 ՏᎬᎪᎡᏟᎻ ', url='switch_inline_query_current_chat=''),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
